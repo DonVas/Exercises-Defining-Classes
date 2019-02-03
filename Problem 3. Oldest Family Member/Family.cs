@@ -7,16 +7,16 @@ namespace DefiningClasses
 {
     public class Family
     {
-        public List<Person> Familys { get; set; }=new List<Person>();
+        public List<Person> family { get; set; }=new List<Person>();
 
         public void AddMember(Person member)
         {
-            Familys.Add(member);
+            family.Add(member);
         }
 
         public Person GetOldestMember()
         {
-            return this.Familys
+            return this.family
                 .OrderByDescending(p => p.Age)
                 .First();
         }

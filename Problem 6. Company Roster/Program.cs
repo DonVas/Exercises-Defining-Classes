@@ -24,19 +24,23 @@ namespace Problem_6._Company_Roster
                 {
                     if (tokens[4].Contains("@"))
                     {
-                        employees.Add(new Employee(tokens[0], decimal.Parse(tokens[1]), tokens[2], tokens[3], tokens[4]));
+                        employees.Add(
+                            new Employee(tokens[0], decimal.Parse(tokens[1]), tokens[2], tokens[3], tokens[4]));
                     }
                     else
                     {
-                        employees.Add(new Employee(tokens[0], decimal.Parse(tokens[1]), tokens[2], tokens[3], int.Parse(tokens[4])));
+                        employees.Add(new Employee(tokens[0], decimal.Parse(tokens[1]), tokens[2], tokens[3],
+                            int.Parse(tokens[4])));
                     }
                 }
                 else if (tokens.Length == 6)
                 {
-                    employees.Add(new Employee(tokens[0], decimal.Parse(tokens[1]), tokens[2], tokens[3], tokens[4], int.Parse(tokens[5])));
+                    employees.Add(new Employee(tokens[0], decimal.Parse(tokens[1]), tokens[2], tokens[3], tokens[4],
+                        int.Parse(tokens[5])));
                 }
+            }
 
-                string bestPaidDept = employees
+            string bestPaidDept = employees
                     .GroupBy(e => e.Department)
                     .Select(g => new { Department = g.Key, AvgSalary = g.Average(e => e.Salary) })
                     .OrderByDescending(o => o.AvgSalary)
@@ -50,7 +54,7 @@ namespace Problem_6._Company_Roster
                     .OrderByDescending(e => e.Salary)
                     .ToList()
                     .ForEach(Console.WriteLine);
-            }
+            
         }
     }
 }
