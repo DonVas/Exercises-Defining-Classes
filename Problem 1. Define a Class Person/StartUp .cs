@@ -14,15 +14,15 @@ namespace DefiningClasses
                 Person personZero = new Person();
 
                 personZero.Name = "Pesho";
-                personZero.Age =20 ;
+                personZero.Age = 20 ;
                 persons.Add(personZero);
 
-                Person personOne=new Person("Gosho",18);
+                Person personOne = new Person("Gosho", 18);
                 persons.Add(personOne);
 
-                persons.Add(new Person("Stamat",43));
+                persons.Add(new Person("Stamat", 43));
 
-            persons.ForEach(x=>Console.WriteLine($"{x.Name} {x.Age}"));
+            persons.ForEach(x => Console.WriteLine($"{x.Name} {x.Age}"));
         }
     }
 }

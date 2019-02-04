@@ -34,7 +34,7 @@ namespace Problem_9._Rectangle_Intersection
             double otherhorizontal = otherRectangle.PointOfLeftCorner.Horizontal;
 
 
-            //ugly part must be optimized
+            //ugly part must be optimized//
 
             if ((othervertical >= this.PointOfLeftCorner.Vertical && othervertical - otherRectangle.height <= this.PointOfLeftCorner.Vertical && otherhorizontal <= this.PointOfLeftCorner.Horizontal && otherhorizontal + otherRectangle.width >= this.PointOfLeftCorner.Horizontal) ||
                 (othervertical >= this.PointOfLeftCorner.Vertical && othervertical - otherRectangle.height <= this.PointOfLeftCorner.Vertical && otherhorizontal >= this.PointOfLeftCorner.Horizontal && otherhorizontal <= this.PointOfLeftCorner.Horizontal + this.width) ||
