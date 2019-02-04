@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.168
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Problem 1. Define a Class Person", "Problem 1. Define a Class Person\Problem 1. Define a Class Person.csproj", "{BEBF97CC-73B2-434D-8747-0566B971214E}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Problem 2. Creating Constructors", "Problem 2. Creating Constructors\Problem 2. Creating Constructors.csproj", "{0B6FD694-9458-4E53-8C1C-9C97A24E31FB}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Problem 3. Oldest Family Member", "Problem 3. Oldest Family Member\Problem 3. Oldest Family Member.csproj", "{7F2AD10A-615F-4254-BC4B-EFD733D770D7}"
@@ -15,7 +13,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Problem 5. Date Modifier", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Problem 6. Company Roster", "Problem 6. Company Roster\Problem 6. Company Roster.csproj", "{396DC77C-DBED-4EDB-A238-FA7B7A37F77A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Problem 7. Speed Racing", "Problem 7. Speed Racing\Problem 7. Speed Racing.csproj", "{439B469A-3DBD-4EA7-A1AA-32AE6EBC4BE8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Problem 7. Speed Racing", "Problem 7. Speed Racing\Problem 7. Speed Racing.csproj", "{439B469A-3DBD-4EA7-A1AA-32AE6EBC4BE8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Problem 1. Define a Class Person", "Problem 1. Define a Class Person\Problem 1. Define a Class Person.csproj", "{5476EDC8-9A04-48AC-A96D-BF8279F425D4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,10 +23,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{BEBF97CC-73B2-434D-8747-0566B971214E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{BEBF97CC-73B2-434D-8747-0566B971214E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{BEBF97CC-73B2-434D-8747-0566B971214E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{BEBF97CC-73B2-434D-8747-0566B971214E}.Release|Any CPU.Build.0 = Release|Any CPU
 		{0B6FD694-9458-4E53-8C1C-9C97A24E31FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{0B6FD694-9458-4E53-8C1C-9C97A24E31FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0B6FD694-9458-4E53-8C1C-9C97A24E31FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -51,6 +47,10 @@ Global
 		{439B469A-3DBD-4EA7-A1AA-32AE6EBC4BE8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{439B469A-3DBD-4EA7-A1AA-32AE6EBC4BE8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{439B469A-3DBD-4EA7-A1AA-32AE6EBC4BE8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5476EDC8-9A04-48AC-A96D-BF8279F425D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5476EDC8-9A04-48AC-A96D-BF8279F425D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5476EDC8-9A04-48AC-A96D-BF8279F425D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5476EDC8-9A04-48AC-A96D-BF8279F425D4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

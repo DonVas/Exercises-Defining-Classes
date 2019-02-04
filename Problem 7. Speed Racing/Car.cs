@@ -4,41 +4,53 @@ using System.Text;
 
 namespace Problem_7._Speed_Racing
 {
-    class Car
+    public  class Car
     {
         //model, fuel amount, fuel consumption for 1 kilometer 
-        private string model;       
+        //“<Model> <FuelAmount> <FuelConsumptionFor1km>”
+        //“Drive <CarModel>  <amountOfKm>”
+        //“<Model> <fuelAmount>  <distanceTraveled>”
 
-        public string Model
+        public string Model { get; set; }
+
+        public double FuelAmount { get; set; }
+
+        public double FuelConsumptionFor1km { get; set; }
+
+        public int DistanceTraveled { get; set; }
+
+        public Car(string model,int fuelAmount,double fuelConsumptionFor1Km)
         {
-            get { return model; }
-            set { model = value; }
+            this.Model = model;
+            this.FuelAmount = fuelAmount;
+            this.FuelConsumptionFor1km = fuelConsumptionFor1Km;
         }
 
-        private int fuelAmount;
-
-        public int FuelAmount
+        public bool CanBeMoveDistance(int distance)
         {
-            get { return fuelAmount; }
-            set { fuelAmount = value; }
+            double fuelForTravel = this.FuelConsumptionFor1km * distance;
+
+            if (fuelForTravel <= this.FuelAmount)
+            {
+                this.FuelAmount -= fuelForTravel;
+                this.DistanceTraveled += distance;
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
 
-        private double fuelConsumptionFor1km;
-
-        public double FuelConsumptionFor1km
-        {   
-            get { return fuelConsumptionFor1km; }
-            set { fuelConsumptionFor1km = value; }
-        }
-
-        private int distanceTraveled;
-
-        public int DistanceTraveled
+        public override string ToString()
         {
-            get { return distanceTraveled; }
-            set { distanceTraveled = value; }
+            StringBuilder carBuilder = new StringBuilder();
+
+            carBuilder.Append($"{this.Model} ");
+            carBuilder.Append($"{this.FuelAmount:F2} ");
+            carBuilder.Append($"{this.DistanceTraveled}");
+
+            return carBuilder.ToString();
         }
-
-
     }
 }
